@@ -20,7 +20,7 @@ export default function ImageAnimate() {
                 trigger: "#ozlem-bicer-about",
                 start: "top 50%",
                 end: "bottom 80%",
-                scrub: true,
+                scrub: 5,
             }
         });
 

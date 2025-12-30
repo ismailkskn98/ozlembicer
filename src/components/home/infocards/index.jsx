@@ -44,6 +44,21 @@ export default function InfoCards() {
                     <div className="relative flex w-full flex-col items-center justify-center overflow-hidden py-8">
                     </div>
                 </div>
+                <article id="card-bg-2" className="absolute -z-10 w-full xl:block hidden opacity-30">
+                    <div
+                        className="w-full h-screen bg-repeat-y bg-top bg-contain"
+                        style={{
+                            backgroundImage: `
+                        url('/images/top.svg'),
+                        url('/images/center.svg'),
+                        url('/images/bottom.svg')
+                    `,
+                            backgroundRepeat: "no-repeat, repeat-y, no-repeat",
+                            backgroundPosition: "top, center, bottom",
+                            backgroundSize: "100% 4rem, 100% 4rem, 100% 4rem",
+                        }}
+                    />
+                </article>
                 <MotionScrollInViewVariant className={"w-full flex flex-col items-center justify-center gap-y-24 mix-blend-difference text-white"}>
                     {infoCards.map((card) => {
                         const IconComponent = card.icon

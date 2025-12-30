@@ -44,7 +44,7 @@ const legalLinks = [
 
 export default function Footer() {
     return (
-        <footer className='fluid gridContainer overflow-hidden'>
+        <footer className='relative fluid gridContainer'>
             <div className="fluid gridContainer bg-linear-to-b from-[#331864] to-[#141414] py-16">
                 <div className="mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-white text-3xl md:text-4xl font-bold mb-3">
