@@ -26,7 +26,7 @@ const getYoutubeVideos = async () => {
   }
 };
 
-export default async function Home() {
+export default async function HomePage() {
   const t = getTranslations("HomePage");
   const videos = await getYoutubeVideos();
   return <>

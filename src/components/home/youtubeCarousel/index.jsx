@@ -9,13 +9,12 @@ import Image from "next/image";
 import ToolTip from "./toolTip";
 import ModalVideo from "./modalVideo";
 import youtubeCacheVideos from "@/youtube.json";
-import { textLimitCharecter } from "@/utils/textLimitCharecter";
 
 export default function YoutubeCarousel({ videos = [] }) {
   if (!videos || videos.length === 0) {
     videos = youtubeCacheVideos;
   }
-  console.log("videos: ", videos);
+
   return (
     <main className="relative fluid gridContainer mt-20 sm:mt-28 lg:mt-36 mb-20 sm:mb-24">
       <Swiper
