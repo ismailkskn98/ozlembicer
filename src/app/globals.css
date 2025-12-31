@@ -114,6 +114,12 @@ html.lenis body {
   }
 }
 
+@layer utilities {
+  .hovered-link {
+    @apply relative shadow-none rounded-none after:absolute after:left-0.5 after:top-1/2 after:-translate-y-1/2 after:w-1.5 after:h-1.5 after:rounded-full after:bg-radial after:from-white after:from-50% after:to-black after:shadow-sm after:transition-all after:duration-200 ml-1.5 before:absolute before:left-0.5 before:top-1/2 before:-translate-y-1/2 before:w-1.5 before:h-1.5 before:rounded-full before:bg-transparent hover:before:bg-black before:z-10 before:transition-all before:duration-200;
+  }
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
