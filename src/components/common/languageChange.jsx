@@ -34,8 +34,8 @@ export default function LanguageChange() {
                 <SelectContent className="bg-white dark:bg-site-dark">
                     <SelectItem value="tr" className={"cursor-pointer"}>
                         <span className="flex flex-nowrap items-center gap-1.5 text-xs">
-                            <Image src="https://flagcdn.com/24x18/tr.png" alt="Türkçe" width={24} height={18} className="h-3 w-4 object-cover" />
-                            <span>Türkçe</span>
+                            <Image src="https://flagcdn.com/24x18/it.png" alt="Italian" width={24} height={18} className="h-3 w-4 object-cover" />
+                            <span>Italian</span>
                         </span>
                     </SelectItem>
                     <SelectItem value="en" className={"cursor-pointer"}>
@@ -46,20 +46,14 @@ export default function LanguageChange() {
                     </SelectItem>
                     <SelectItem value="ru" className={"cursor-pointer"}>
                         <span className="flex flex-nowrap items-center gap-1.5 text-xs">
-                            <Image src="https://flagcdn.com/24x18/ru.png" alt={"Russian"} width={24} height={18} className="h-3 w-4 object-cover" />
-                            <span>Russian</span>
+                            <Image src="https://flagcdn.com/24x18/fr.png" alt={"French"} width={24} height={18} className="h-3 w-4 object-cover" />
+                            <span>French</span>
                         </span>
                     </SelectItem>
                     <SelectItem value="az" className={"cursor-pointer"}>
                         <span className="flex flex-nowrap items-center gap-1.5 text-xs">
-                            <Image src="https://flagcdn.com/24x18/az.png" alt={"Azerbaijani"} width={24} height={18} className="h-3 w-4 object-cover" />
-                            <span>Azerbaijani</span>
-                        </span>
-                    </SelectItem>
-                    <SelectItem value="ka" className={"cursor-pointer"}>
-                        <span className="flex flex-nowrap items-center gap-1.5 text-xs">
-                            <Image src="https://flagcdn.com/24x18/ge.png" alt={"Georgia"} width={24} height={18} className="h-3 w-4 object-cover" />
-                            <span>Georgia</span>
+                            <Image src="https://flagcdn.com/24x18/de.png" alt={"German"} width={24} height={18} className="h-3 w-4 object-cover" />
+                            <span>German</span>
                         </span>
                     </SelectItem>
                 </SelectContent>
