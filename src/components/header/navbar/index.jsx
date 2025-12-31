@@ -14,7 +14,6 @@ export default function Navbar() {
             <Link href={"#"}>Gallery</Link>
             <Link href={"#"}>Contact Us</Link> */}
             <Link href="/">Home</Link>
-            <Link href="/contact-us">Contact</Link>
             <Menu setActive={setActive}>
                 <MenuItem setActive={setActive} active={active} item="About Us">
                     <div className="flex flex-col space-y-4 text-sm bg-white capitalize">
@@ -22,10 +21,10 @@ export default function Navbar() {
                         <HoveredLink href="/who-is-ozlem-bicer">Who is Ozlem Bicer</HoveredLink>
                         <HoveredLink href="/clinic-and-team">Clinic and Team</HoveredLink>
                         <HoveredLink href="/price">Price</HoveredLink>
-                        <HoveredLink href="/covid-measures">Covid Measures</HoveredLink>
+                        {/* <HoveredLink href="/covid-measures">Covid Measures</HoveredLink> */}
                     </div>
                 </MenuItem>
-                <MenuItem setActive={setActive} active={active} item="Transplantation">
+                {/* <MenuItem setActive={setActive} active={active} item="Transplantation">
                     <div className="  text-sm grid grid-cols-2 gap-10 p-4">
                         <ProductItem
                             title="Algochurn"
@@ -52,16 +51,12 @@ export default function Navbar() {
                             description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
                         />
                     </div>
-                </MenuItem>
-                <MenuItem setActive={setActive} active={active} item="Pricing">
-                    <div className="flex flex-col space-y-4 text-sm">
-                        <HoveredLink href="/hobby">Hobby</HoveredLink>
-                        <HoveredLink href="/individual">Individual</HoveredLink>
-                        <HoveredLink href="/team">Team</HoveredLink>
-                        <HoveredLink href="/enterprise">Enterprise</HoveredLink>
-                    </div>
-                </MenuItem>
+                </MenuItem> */}
             </Menu>
+            <Link href={"#"}>Transplantation</Link>
+            <Link href={"#"}>Hair Treatments</Link>
+            <Link href={"#"}>Gallery</Link>
+            <Link href="/contact-us">Contact</Link>
         </nav>
     )
 }

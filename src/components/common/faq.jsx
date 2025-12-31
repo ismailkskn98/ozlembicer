@@ -30,7 +30,7 @@ export default function FAQ({ items = [], title = "Frequently Asked Questions", 
     const faqItems = items.length > 0 ? items : defaultItems;
 
     return (
-        <section className={`relative fluid gridContainer w-full mt-16 mb-20 sm:mb-28 lg:mb-36 ${className}`}>
+        <section className={`relative fluid gridContainer w-full mt-16 mb-12 sm:mb-20 lg:mb-28 ${className}`}>
             <MotionScrollInView className="w-full">
                 <main className="relative w-full py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-br from-white via-gray-50 to-white rounded-3xl overflow-hidden border border-gray-200/80 shadow-lg">
                     <div className="absolute top-0 right-0 w-32 h-32 sm:w-48 sm:h-48">

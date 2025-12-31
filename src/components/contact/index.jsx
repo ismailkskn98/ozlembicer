@@ -35,7 +35,14 @@ export default function ContactMain() {
 
     return (
         <main className="relative fluid gridContainer w-full mt-16 mb-16 sm:mb-20 lg:mb-28">
-            <section className="flex flex-col gap-12 lg:gap-16">
+            <div className='fluid absolute inset-x-0 top-0 w-full h-1/4 -z-10'>
+                <div className='absolute inset-0 top-0 z-30 bg-white/50' />
+                <div className='absolute z-30 inset-x-0 bottom-1/3 h-24 bg-linear-to-t from-white to-transparent' />
+                <video className='absolute -top-1/3 object-cover w-full h-full z-20' autoPlay muted loop>
+                    <source src='/videos/hero-bg.mp4' type='video/mp4' />
+                </video>
+            </div>
+            <section className="relative flex flex-col gap-12 lg:gap-16">
                 <MotionScrollInView className="flex flex-col items-center text-center gap-4">
                     <header>
                         <h3 className="text-sm sm:text-base font-medium uppercase tracking-wider text-logo-blue mb-3">

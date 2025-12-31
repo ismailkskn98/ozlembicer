@@ -11,14 +11,17 @@ export default function AboutMain() {
     const coverImage = '/images/about/why-choose-us-cover-image.jpg';
 
     return (
-        <main className="relative fluid gridContainer w-full mt-16 mb-20 sm:mb-28 lg:mb-36">
+        <main className="relative fluid gridContainer w-full mt-16 mb-12 sm:mb-20 lg:mb-28">
             <section className="relative flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8 lg:gap-12">
                 <MotionScrollInView className="flex-1 w-full lg:max-w-2xl">
                     <article className="flex flex-col items-start gap-6">
                         <header className="flex flex-col items-start gap-3 w-full">
-                            <h3 className="text-sm sm:text-base font-medium uppercase tracking-wider text-logo-blue">
-                                WHY CHOOSE US
-                            </h3>
+                            <div className='flex items-center gap-0.5'>
+                                <Image src="/images/1-hair.svg" alt='hair' width={20} height={100} className='invert object-contain object-center' />
+                                <h3 className="relative text-sm sm:text-base font-medium uppercase tracking-wider text-logo-blue">
+                                    WHY CHOOSE US
+                                </h3>
+                            </div>
                             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-marcellus text-black/90 leading-tight">
                                 An Experienced Doctor and Medical Team
                             </h1>

@@ -43,7 +43,7 @@ export default function HeroCarousel() {
                 {heroImages.map((image, i) => (
                     <SwiperSlide key={i} className='py-16'>
                         {({ isActive, isPrev, isNext }) => (
-                            <article className={`relative w-full h-full transition-all duration-500 ${isActive ? 'scale-120 z-10' : 'scale-60'}`}>
+                            <article className={`relative w-full h-full transition-all duration-500 ${isActive ? 'scale-120 z-10' : 'scale-60 rotate-0'}`}>
                                 <div className={`relative w-full h-110 overflow-hidden rounded-sm shadow-lg border border-gray-200`}>
                                     <Image src={image.src} alt={image.alt} fill className={`object-cover object-center transition-opacity duration-500 ${isActive ? 'opacity-100' : 'opacity-60'}`} />
                                     {!isActive && (
